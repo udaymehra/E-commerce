@@ -6,7 +6,7 @@ const authRouter=require('./routes/auth/auth-routes')
 const adminProductsRouter=require('./routes/admin/products-routes')
 // it will return a promise and when promise is resolved then your server connection with database is successful
 mongoose
-  .connect("mongodb+srv://mehrauday66:mehra4461@cluster0.j1suw.mongodb.net/")
+  .connect("my mongoDB URL/")
   .then(() => console.log("MongoDB Connected"))
   .catch((error) => console.log(error));
 
